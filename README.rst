@@ -19,7 +19,7 @@ via `multiprocessing.set_start_method <https://docs.python.org/3/library/multipr
 
 One usage example is the use of multiple GPUs in Theano where
 you would spawn a separate process for each GPU.
-This is explained `here <https://github.com/Theano/Theano/wiki/Using-Multiple-GPUs`_.
+This is explained `here <https://github.com/Theano/Theano/wiki/Using-Multiple-GPUs>`_.
 
 TaskSystem is used
 by `Music player <https://github.com/albertz/music-player>`_
