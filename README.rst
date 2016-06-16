@@ -17,4 +17,16 @@ via `multiprocessing.set_start_method <https://docs.python.org/3/library/multipr
 
   multiprocessing.set_start_method('spawn')
 
-TaskSystem is used by `Music player <https://github.com/albertz/music-player>`_.
+One usage example is the use of multiple GPUs in Theano where
+you would spawn a separate process for each GPU.
+This is explained `here <https://github.com/Theano/Theano/wiki/Using-Multiple-GPUs`_.
+
+TaskSystem is used
+by `Music player <https://github.com/albertz/music-player>`_
+(`here <https://github.com/albertz/music-player/blob/master/src/TaskSystem.py>`_)
+and by `RETURNN <https://github.com/rwth-i6/returnn>`_
+(`here <https://github.com/rwth-i6/returnn/blob/master/TaskSystem.py>`_).
+
+One dump of the code is `here on a Gist <https://gist.github.com/albertz/4177e40d41cb7f9f7c68>`_
+but it will be copied to this repository soon.
+
