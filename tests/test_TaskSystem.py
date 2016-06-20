@@ -27,10 +27,10 @@ def test_AsyncTask_isFork():
     assert not TaskSystem.isFork
 
 
-def test_AsyncTask_ForwardedKeyboardInterrupt():
+def test_AsyncTask_ProcConnectionDied():
     def func(task):
         pass
-    task = AsyncTask(func, name="test_AsyncTask_ForwardedKeyboardInterrupt")
+    task = AsyncTask(func, name="test_AsyncTask_ProcConnectionDied")
     try:
         task.get()
         raise Exception("Did not get an exception.")
