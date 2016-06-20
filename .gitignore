@@ -1,0 +1,11 @@
+*.pyc
+.DS_Store
+
+# via setuptools
+/MANIFEST
+/build
+/dist
+*.egg-info
+
+# PyCharm
+/.idea
